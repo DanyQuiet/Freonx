@@ -1,0 +1,129 @@
+@import "_normalize";
+@import "_variable";
+@import "_fonts";
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+input,
+textarea {
+    outline: none;
+    border: 1px solid $blue;
+    &:active,
+    &:focus {
+        border: 1px solid $blue;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper {
+    padding-bottom: 55px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: $red;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #003f7d;
+}
+
+// common
+.ibg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.suptitle-common-red {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 23px;
+    color: $black;
+    span {
+        color: $red;
+        padding-right: 7px;
+    }
+}
+
+.title-common-blue {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    color: $blue;
+    text-transform: uppercase;
+    @media (max-width: 500px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+.button-red {
+    padding: 28px 64px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: $white;
+    background: $red;
+    text-transform: uppercase;
+    transition: background 0.3s linear;
+    &:hover {
+        cursor: pointer;
+        background: #991033;
+    }
+}
+
+@import "blocks/_header";
+@import "blocks/_main";
+@import "blocks/_footer";
+@import "blocks/_supmenustyles";
